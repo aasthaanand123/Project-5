@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+/* font-family: 'Manrope', sans-serif; */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+/* desktop view */
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+}
+main {
+  margin: 30vh auto 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 52%;
+  background-color: white;
+  border-radius: 10px;
+}
+.card__last {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+  color: hsl(214, 17%, 51%);
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  word-spacing: 2px;
+}
+.card__name,
+h1 {
+  color: hsl(217, 19%, 35%);
+}
+.card__date {
+  color: hsl(212, 23%, 69%);
+}
+.image {
+  width: 38%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.icon__share {
+  width: 17px;
+  transform: translateX(7px) translateY(4px);
+}
+.content {
+  font-weight: 500;
+  padding: 30px;
+  font-size: 1.16rem;
+}
+.icon_ {
+  background-color: hsl(210, 46%, 95%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.icon_:hover {
+  background-color: hsl(217, 19%, 35%);
+  cursor: pointer;
+}
+.card__last__one {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.card__image {
+  width: 10%;
+}
+.image__person {
+  width: 40px;
+  border-radius: 50%;
+  padding-right: 15px;
+}
+.share {
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 54.3%;
+  right: 18.5%;
+
+  padding: 20px;
+  width: 180px;
+
+  background-color: hsl(217, 19%, 35%);
+}
+.share::after {
+  position: absolute;
+  content: "";
+  top: 59px;
+  left: 75px;
+  border: 15px solid transparent;
+  border-top-color: hsl(217, 19%, 35%);
+}
+span {
+  letter-spacing: 3px;
+  color: hsl(212, 23%, 69%);
+}
+.hide {
+  display: none;
+}
+/* Mobile view */
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 93%;
+  }
+  .image {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  h1 {
+    font-size: 1.55rem;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
+  .card__last {
+    padding-top: 20px;
+  }
+  .share {
+    position: relative;
+    width: 89%;
+    height: 100%;
+    left: 0.1px;
+  }
+  .share::after {
+    border-color: transparent;
+  }
+}
+@media (max-width: 1440px) {
+  .share {
+    top: 47.5%;
+    right: 18%;
+  }
+}
