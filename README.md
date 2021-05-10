@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/aasthaanand123/Project-5)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://article-preview-component1.netlify.app/)
 
 ## My process
 
